@@ -9,8 +9,14 @@ Minimal FastAPI app with 3 endpoints:
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+```
+
+If PowerShell blocks activation, run:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
 Create `.env` in project root:
@@ -59,7 +65,7 @@ curl -X POST http://127.0.0.1:8000/analyze-sentiment ^
 1. Push this project to GitHub.
 2. Log in at [https://render.com](https://render.com) and click **New +** -> **Web Service**.
 3. Connect your GitHub repo and select this project.
-4. Configure:
+4. Configure in the Render UI (no `render.yaml` needed):
    - **Runtime**: Python 3
    - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
