@@ -1,5 +1,10 @@
 # FastAPI LLM API
 
+<img width="3840" height="1554" alt="image" src="https://github.com/user-attachments/assets/8d26b7be-df2a-46ff-a602-a8336f720068" />
+
+<img width="3840" height="1554" alt="image" src="https://github.com/user-attachments/assets/1af5741a-8dfd-42af-b4f0-5bbab4c406fd" />
+
+
 Minimal FastAPI app with 3 endpoints:
 - `GET /health`
 - `POST /summarize`
